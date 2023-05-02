@@ -25,3 +25,10 @@ curl -X POST \
     -H "Authorization: Basic ${base64(username:password)}" \
     -d '{"conf":{}}' \
     http://localhost:8080/api/v1/dags/spark_submit_dag/dagRuns
+
+# Example:
+curl -X POST \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Basic YWlyZmxvdzphaXJmbG93" \
+    -d '{"conf":{}}' \
+    http://localhost:8080/api/v1/dags/spark_submit_dag_2/dagRuns

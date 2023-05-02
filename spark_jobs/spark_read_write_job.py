@@ -12,8 +12,8 @@ spark = SparkSession.builder \
 
 # /Users/oalsaghier/Documents/Training/airflow_apis_with_spark_submit/data_input_output/orders.csv
 WORKING_DIR = str(os.getcwd())
-data_input_file = f"{WORKING_DIR.split('/airflow')[0]}/airflow_apis_with_spark_submit/data_input_output/orders.csv"
-data_output_file = f"{WORKING_DIR.split('/airflow')[0]}/airflow_apis_with_spark_submit/data_input_output/orders.json"
+data_input_file = f"{WORKING_DIR.split('/Training')[0]}/Training/airflow_apis_with_spark_submit/data_input_output/orders.csv"
+data_output_file = f"{WORKING_DIR.split('/Training')[0]}/Training/airflow_apis_with_spark_submit/data_input_output/orders.json"
 
 ordersDF = spark.read.csv(data_input_file, \
     header=True, \
