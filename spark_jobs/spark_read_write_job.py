@@ -10,7 +10,7 @@ spark = SparkSession.builder \
     .config("spark.driver.memory",'4g') \
     .getOrCreate()
 
-# /Users/oalsaghier/Documents/Training/airflow_apis_with_spark_submit/data_input_output/orders.csv
+# /..../Documents/Training/airflow_apis_with_spark_submit/data_input_output/orders.csv
 WORKING_DIR = str(os.getcwd())
 data_input_file = f"{WORKING_DIR.split('/Training')[0]}/Training/airflow_apis_with_spark_submit/data_input_output/orders.csv"
 data_output_file = f"{WORKING_DIR.split('/Training')[0]}/Training/airflow_apis_with_spark_submit/data_input_output/orders.json"
