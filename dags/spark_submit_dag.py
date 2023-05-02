@@ -11,7 +11,7 @@ dag_spark_submit = DAG(
     description='executing spark submit command'
 )
 
-SPARK_SUBMIT_FILE = "/Users/oalsaghier/Documents/Training/Big_data_tools/hadoop_spark_installation/spark_code_test.py"
+SPARK_SUBMIT_FILE = "<path-to-spark-script>/spark_jobs/spark_read_write_job.py"
 
 print("submitting the job")
 
