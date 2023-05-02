@@ -56,7 +56,7 @@ auth_backends = airflow.api.auth.backend.basic_auth
 ```
 $ airflow config get-value api auth_backends
 ```
-
+***
 * Start Airflow webserver in port `8080`:
 ```
 $ airflow webserver -p 8080
